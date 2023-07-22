@@ -1,0 +1,264 @@
+body{
+  background-image: url('./images/papers\ background;.png') ;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.styleimg{
+  margin-left: auto;
+  margin-right: auto;
+  width: 1295px;
+  height: 200px;
+  margin-top: 103px;
+}
+.photo-card {
+  max-width: 270px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin:40px auto ;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 24px;
+  overflow: hidden;
+  background-color: #1A2165;
+}
+.icons a{
+  text-decoration: none;
+  color: #fff;
+}
+a:hover{
+  color:black;
+}
+.profile{
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  height:68%;
+}
+.photo-card img {
+  width: 100%;
+  height: 95%;
+  display: block;
+  padding: 16px;
+  margin:0;
+  padding-bottom: 5px;
+  border-radius: 25px 25px 0px 0px;
+}
+.card-content {
+  height:35%;
+  padding: 0px 5px;
+  color: white;
+  font-family: Goldman;
+font-size: 26px;
+font-weight: 700;
+line-height: 29px;
+letter-spacing: -0.02em;
+text-align: center;
+padding:0px;
+
+}
+.icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.alignicons{
+  margin: 4px 12px;
+}
+.contactcards{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.navh{
+  height: 80px;
+  width: 100%;
+  margin-top: 70px;
+  margin-left: 21px;
+}
+label.logo{
+  color: rgb(255, 255, 255);
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+.navh ul{
+  float: right;
+  margin-right: 20px;
+}
+.navh ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 20px;
+}
+.navh ul li a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  font-family: Goldman;
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0.03em;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+.navh a.active{
+  background: #FFB400;
+  transition: .5s;
+}
+.navh a:hover{
+  color: #FFB400;
+}
+.navh a.active:hover{
+  color: #1A2165;
+}
+.checkbtn{
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+.logoh{
+  width: 40px;
+}
+.gambitorh{
+  width: 200px;
+}
+@media screen and (max-width: 1085px) and (min-width:875px){
+  .navh{
+    margin-top: 50px;
+  }
+  label.logo{
+    font-size: 20px;
+    padding-left: 10px;
+  }
+  .navh ul li a{
+    font-size: 13px;
+  }
+  .gambitorh{
+    width:80px;
+  }
+  .navh ul{
+    margin-right: 5px;
+  }
+  .navh ul li{
+    margin:0 5px;
+  }
+}
+@media screen and (max-width: 1305px) and (min-width:1085px){
+  .navh {
+    margin-left: -10px;
+    width:1300px;
+  }
+  .navh ul{
+    margin-right: 10px;
+  }
+  .navh ul li{
+    margin:0 10px;
+  }
+}
+@media screen and (max-width: 875px) {
+  .navh{
+    margin-top: 50px;
+  }
+  label.logo{
+    font-size:15px;
+    padding-left: 20px;
+  }
+  .logoh{
+    width:30px;
+  }
+  .gambitorh{
+    width:180px;
+  }
+  .checkbtn{
+    display: block;
+  }
+  .headerlist{
+    width: 100%;
+    position:fixed;
+    top: -40px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.1ms;
+  }
+  .navh ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+    color: #fff;
+  }
+  .navh ul li a{
+    font-size: 20px;
+    color: #fff;
+  }
+  .navh a:hover,.navh a.active{
+    background: none;
+    color: #FFB400;
+  }
+  #check:checked ~ ul{
+    left: 0;
+    position: relative;
+  }
+}
+@media screen and (max-width:1400px) and (min-width:1199px) 
+{
+  .styleimg{
+    width:1200px;
+    height:180px;
+  }
+}
+@media screen and (max-width:1199px) and (min-width:991px) 
+{
+  .styleimg{
+    width:1000px;
+    height:160px;
+  }
+}
+
+@media screen and (max-width:991px) and (min-width:770px) 
+{
+  .styleimg{
+    width:750px;
+    height:150px;
+  }
+}
+@media screen and (max-width:770px) and (min-width:530px) 
+{
+  .styleimg{
+    width:630px;
+    height:120px;
+  }
+}
+@media screen and (max-width:530px) and (min-width:397px)
+{
+  .styleimg{
+    width:460px;
+    height:90px;
+  }
+}
+@media screen and (max-width:397px) {
+  .styleimg{
+    width:390px;
+    height:87px;
+  }
+  label.logo{
+    padding-left: 0px;
+    margin-left: -10px;
+  }
+  .logoh{
+    width:20px;
+  }
+  .gambitorh{
+    width:120px;
+  }
+}
